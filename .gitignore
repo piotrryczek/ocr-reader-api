@@ -1,0 +1,7 @@
+node_modules
+pdf
+images
+.env
+eng.traineddata
+esp.traineddata
+spa.traineddata

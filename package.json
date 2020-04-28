@@ -1,0 +1,44 @@
+{
+  "name": "ocr-reader-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack webpack.js",
+    "start": "NODE_PATH=./src nodemon babel-node src/server.js",
+    "start-dev": "NODE_PATH=./src nodemon --exec babel-node src/server.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "@koa/cors": "2",
+    "dotenv-webpack": "^1.7.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.15",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.3",
+    "pdf2pic": "^1.4.0",
+    "qs": "^6.9.3",
+    "socket.io": "^2.3.0",
+    "tesseract.js": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "install": "^0.13.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
